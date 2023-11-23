@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>  
+  </head>
+
+  <body>
+
+    <div class="weather-app">
+
+      <div id="current-date" class="current-date"></div>
+
+
+    </br></br>
+      <form id="city-form">
+        <input type="search" id="search-text-input" placeholder="Enter a city..." required class="search-input">
+        <input type="submit" value="Search" class="search-button">
+      </form>
+      
+    </br>
+
+    <main>
+
+      <div class="current-weather">
+
+      </br>
+
+        <div>
+          <h1 class="current-city" id="current-city">City</h1>
+        </div>
+
+      </br>
+
+        <span class="current-temperature-value" id="current-temperature">0</span>
+        <span class="current-temperature-unit">°C</span>
+
+      </br>
+
+      <div class="current-temperature">
+        <div class="current-temperature-icon">☁️</div>
+      </div>
+
+        <div class="current-details">
+          <span id="temperature-details">💧 <strong>Humidity:</strong> ..% - 🌬️ <strong>Wind:</strong> ..km/h</span>
+        </div>
+
+      </div>
+
+    </main>
+  </br></br></br>
+    <footer>
+      <em>© Marion Frotté | 2023</em>
+    </footer>
+    
+    <script src="src/index.js"></script>
+  </body>
+</html>
