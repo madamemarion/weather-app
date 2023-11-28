@@ -1,16 +1,18 @@
 body {
     font-family: cerebi sans;
-    background-image: url("src/clouds.jpg");
-    background-repeat: repeat;
-  }
+    background-color: #c9e2ff;
+    background-image: url(clouds1.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+}
   
   .weather-app {
-    background-color: #e4f0ff;
+    background-color: #f6f6f6;
     max-width: 600px;
-    margin: 60px auto;
+    margin: 20px auto;
     padding: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(138, 138, 140);
@@ -26,13 +28,13 @@ body {
     margin: 5px;
     border-style: solid;
     border-color: rgb(138, 138, 140);
-    border-radius: 5px;
+    border-radius: 15px;
     font-family: cerebi sans;
     font-size: 25px;
   }
   
   .search-button {
-    background-color: rgb(136, 121, 129);
+    background-color:  #4a90e2;
     color: #fff;
     cursor: pointer;
   }
@@ -88,14 +90,14 @@ body {
   }
 
   footer {
-    background-color: #455d7a;
-    color: white;
+    color: #455d7a;
     padding: 20px;
+    font-size: 17px ; 
     text-align: center;
   }
   
   footer a {
-    color: #f95959;
+    color: #4a90e2;
     text-decoration: none;
   }
   

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>  
   </head>
 
@@ -10,16 +10,14 @@
 
     <div class="weather-app">
 
-      <div id="current-date" class="current-date"></div>
-
-
     </br></br>
       <form id="city-form">
         <input type="search" id="search-text-input" placeholder="Enter a city..." required class="search-input">
         <input type="submit" value="Search" class="search-button">
       </form>
       
-    </br>
+    </br></br>
+    <div id="current-date" class="current-date"></div>
 
     <main>
 
@@ -28,38 +26,44 @@
       </br>
 
         <div>
-          <h1 class="current-city" id="current-city">City</h1>
+          <h1 class="current-city" id="current-city">Berlin</h1>
         </div>
 
       </br>
 
-        <span class="current-temperature-value" id="current-temperature">0</span>
+        <span class="current-temperature-value" id="current-temperature">-1</span>
         <span class="current-temperature-unit">°C</span>
 
       </br>
 
       <div class="current-temperature">
         <div class="current-temperature-icon">☁️</div>
-      </div>
-
         <div class="current-details">
-          <span id="temperature-details">💧 <strong>Humidity:</strong> ..% - 🌬️ <strong>Wind:</strong> ..km/h</span>
-        </div>
+            <span id="description" class="description">
+              <strong>scattered clouds</strong></span> 
+            <br/><br/><br/><br/>
 
-      </div>
+            <span id="temperature-details">
+                💧  Humidity: <strong id="humidity"></strong>| 🌬️ Wind:
+                <strong id="wind-speed"></strong>
+            </span>
+        </div>
+    </div>
+    
 
     </main>
-  </br></br></br>
-    <footer>
+
+  </br></br>
+
       <footer>
-        <p>
+        <p><em>
           This project was coded by
-          <a href="https://github.com/madamemarion" target="_blank">Marion</a> and is
-          <a href="https://github.com/madamemarion/weather-app" target="_blank"> on GitHub</a> and
-          <a href="https://sunnyrainy.netlify.app/" target="_blank">hosted on Netlify</a>
-        </p>
+          <a href="https://github.com/madamemarion" target="_blank"><strong>Marion</strong></a> and is
+          <a href="https://github.com/madamemarion/weather-app" target="_blank"><strong> on GitHub</strong></a> and
+          <a href="https://sunnyrainy.netlify.app/" target="_blank"><strong>hosted on Netlify</strong></a>
+        </em></p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>

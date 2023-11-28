@@ -16,7 +16,7 @@ function displayTemperature(response) {
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = temperature;
-  detailsElement.innerHTML = `${humidity} - ${wind}`;
+  detailsElement.innerHTML = `${humidity} | ${wind}`;
   iconElement.innerHTML = `<img src="${iconUrl}" alt="Weather Icon" class="weather-icon">`;
   descriptionElement.innerHTML = `<strong>${response.data.condition.description}</strong>`;
 
