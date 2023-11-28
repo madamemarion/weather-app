@@ -1,6 +1,7 @@
 body {
     font-family: cerebi sans;
     background-image: url("src/clouds.jpg");
+    background-repeat: repeat;
   }
   
   .weather-app {
