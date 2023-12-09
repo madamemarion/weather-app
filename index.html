@@ -1,129 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link href="src/styles.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>  
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <link href="src/styles.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
 
-  <body>
+<body>
+  <div class="weather-app">
 
-    <div class="weather-app">
+    <form id="city-form">
+      <input type="search" id="search-text-input" placeholder="Enter a city..." required class="search-input">
+      <input type="submit" value="Search" class="search-button">
+    </form>
 
-    </br></br>
-      <form id="city-form">
-        <input type="search" id="search-text-input" placeholder="Enter a city..." required class="search-input">
-        <input type="submit" value="Search" class="search-button">
-      </form>
-      
-    </br></br>
+<br>
+
     <div id="current-date" class="current-date"></div>
 
+<br>
+
     <main>
-
       <div class="current-weather">
+        <h1 class="current-city" id="current-city">Berlin</h1>
 
-      </br>
+    <br>
 
-        <div>
-          <h1 class="current-city" id="current-city">Berlin</h1>
-        </div>
+        <div class="current-temperature">
+          <span class="current-temperature-value" id="current-temperature">-1</span>
+          <span class="current-temperature-unit">°C</span>
 
-      </br>
+    <br>
 
-        <span class="current-temperature-value" id="current-temperature">-1</span>
-        <span class="current-temperature-unit">°C</span>
+          <div class="current-temperature-icon">☁️</div>
 
-      </br>
-
-      <div class="current-temperature">
-        <div class="current-temperature-icon">☁️</div>
-        <div class="current-details">
+          <div class="current-details">
             <span id="description" class="description">
-              <strong>scattered clouds</strong></span> 
-            <br/><br/><br/><br/>
+              <strong>scattered clouds</strong>
+            </span>
+
+    <br><br><br>
 
             <span id="temperature-details">
-                💧  Humidity: <strong id="humidity"></strong>| 🌬️ Wind:
-                <strong id="wind-speed"></strong>
+              💧 Humidity: <strong id="humidity"></strong>| 🌬️ Wind:
+              <strong id="wind-speed"></strong>
             </span>
-        </div>
-    </div>
-  </br>
-
-  <div class="weather-forecast">
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Mon</div>
-        <div class="weather-forecast-icon">🌤️</div>
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>15º</strong>
           </div>
-
-
-          <div class="weather-forecast-temperature">9º</div>
-        </div>
-      </div>
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Tue</div>
-        <div class="weather-forecast-icon">🌤️</div>
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>15º</strong>
-          </div>
-          <div class="weather-forecast-temperature">9º</div>
         </div>
       </div>
 
+    <br>
 
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Wed</div>
-        <div class="weather-forecast-icon">🌤️</div>
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>15º</strong>
-          </div>
-          <div class="weather-forecast-temperature">9º</div>
-        </div>
-      </div>
+      <div class="weather-forecast" id="forecast"></div>
+    </main>
 
-
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Thu</div>
-        <div class="weather-forecast-icon">🌤️</div>
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>15º</strong>
-          </div>
-          <div class="weather-forecast-temperature">9º</div>
-        </div>
-      </div>
-
-      <div class="weather-forecast-day">
-        <div class="weather-forecast-date">Fri</div>
-        <div class="weather-forecast-icon">🌤️</div>
-        <div class="weather-forecast-temperatures">
-          <div class="weather-forecast-temperature">
-            <strong>15º</strong>
-          </div>
-          <div class="weather-forecast-temperature">9º</div>
-        </div>
-
-      </main>
-
-    </br>
-
-
-
-      <footer>
-        <p><em>
-          This project was coded by
-          <a href="https://github.com/madamemarion" target="_blank"><strong>Marion</strong></a> and is
-          <a href="https://github.com/madamemarion/weather-app" target="_blank"><strong> on GitHub</strong></a> and
-          <a href="https://sunnyrainy.netlify.app/" target="_blank"><strong>hosted on Netlify</strong></a>
-        </em></p>
+    <footer>
+      <p><em>
+        This project was coded by
+        <a href="https://github.com/madamemarion" target="_blank"><strong>Marion</strong></a> and is
+        <a href="https://github.com/madamemarion/weather-app" target="_blank"><strong> on GitHub</strong></a> and
+        <a href="https://sunnyrainy.netlify.app/" target="_blank"><strong>hosted on Netlify</strong></a>
+      </em></p>
     </footer>
-    
-    <script src="src/script.js"></script>
-  </body>
+  </div>
+
+  <script src="src/script.js"></script>
+</body>
 </html>
