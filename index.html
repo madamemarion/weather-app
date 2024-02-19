@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+
+    <div class="weather-app">
+        <div id="current-date" class="current-date text-center" style="padding: 30px;"></div>
+
+        <form id="city-form" class="row">
+            <div class="col">
+                <input type="search" id="search-text-input" placeholder="Enter a city..." required class="form-control">
+            </div>
+            <div class="col-auto">
+                <input type="submit" value="Search" class="btn">
+            </div>
+        </form>
+
+        <script src="src/script.js"></script>
+
+
+</body>
+
+</html>
