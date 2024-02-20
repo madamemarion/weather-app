@@ -94,3 +94,6 @@ function displayForecast(response) {
     forecastContainer.innerHTML = forecastHtml;
     console.log("Forecast HTML added to #forecast:", forecastHtml);
 }
+
+searchCity("Berlin")
+getForecast("Berlin")
