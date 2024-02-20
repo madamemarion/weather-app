@@ -62,3 +62,35 @@ function displayTemperature(response) {
         windSpeedElement.textContent = response.data.wind.speed;
     }
 }
+
+function getForecast(city) {
+    let apiKey = "9ea42828edao36851f80td6c84bff3a7";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}`;
+    axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+    console.log(response.data);
+
+    let forecastHtml = "";
+
+    response.data.daily.forEach(function (day, index) {
+        if (index < 5) {
+            forecastHtml +=
+                `<div class="weather-forecast-day">
+            <div class="weather-forecast-date">${formatDay(day.time)}</div>
+            <img src="${day.condition.icon_url}" class="weather-forecast-icon" />
+            <div class="weather-forecast-temperatures">
+              <div class="weather-forecast-temperature">
+                <strong>${Math.round(day.temperature.maximum)}º C</strong>
+              </div>
+              <div class="weather-forecast-temperature">${Math.round(day.temperature.minimum)}º C</div>
+            </div>
+          </div>`;
+        }
+    });
+
+    let forecastContainer = document.querySelector("#forecast");
+    forecastContainer.innerHTML = forecastHtml;
+    console.log("Forecast HTML added to #forecast:", forecastHtml);
+}

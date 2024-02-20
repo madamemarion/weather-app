@@ -63,3 +63,23 @@ a {
     margin-top: 20px;
     text-align: center;
 }
+
+.weather-forecast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.weather-forecast-day {
+    font-size: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.weather-forecast-temperature {
+    font-size: 18px;
+    color: #666;
+}
