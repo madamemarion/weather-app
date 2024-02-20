@@ -83,3 +83,11 @@ a {
     font-size: 18px;
     color: #666;
 }
+
+footer {
+    border-top: 1px solid #efeeee;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 30px;
+}
