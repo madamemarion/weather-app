@@ -91,3 +91,22 @@ footer {
     color: rgba(0, 0, 0, 0.6);
     padding-top: 30px;
 }
+
+@media (max-width: 768px) {
+    .weather-app {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .current-temperature-value {
+        font-size: 40px;
+    }
+
+    .weather-forecast-day {
+        font-size: 18px;
+    }
+
+    .weather-forecast-temperature {
+        font-size: 15px;
+    }
+}
